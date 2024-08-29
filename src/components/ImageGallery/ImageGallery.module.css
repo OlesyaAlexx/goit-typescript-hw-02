@@ -1,0 +1,22 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .gallery li {
+    flex: 1 1 calc(50% - 16px); /* Два зображення в ряд на маленьких екранах */
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery li {
+    flex: 1 1 100%; /* Одне зображення в ряд на дуже маленьких екранах */
+  }
+}
+.text {
+  text-align: center;
+  color: blue;
+  font-size: 25px;
+}
